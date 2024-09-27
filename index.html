@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popover API</title>
+  <style>
+    #newsletter-box::backdrop {
+      background: rgba(0, 0, 0, 0.6);
+    }
+  </style>
+</head>
+
+<body>
+  <button popovertarget="newsletter-box">
+    Inscreva-se na nossa newsletter!
+  </button>
+
+  <div id="newsletter-box" popover="manual">
+    <button class="close-btn" popovertarget="newsletter-box" popovertargetaction="hide">
+      <span aria-hidden="true">❌</span>
+    </button>
+    <p>O conteúdo fica aqui</p>
+  </div>
+
+</body>
+
+</html>
